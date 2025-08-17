@@ -1,9 +1,11 @@
 # pvlib_cli.py
+
+
 import argparse
 import pandas as pd
-from pvlib.location import Location
-from pvlib.pvsystem import PVSystem
-from pvlib.modelchain import ModelChain
+from my_pvlib.pvsystem import PVSystem, Location
+from my_pvlib.modelchain import ModelChain
+
 
 def main():
     parser = argparse.ArgumentParser(description="Run PV simulation with pvlib.")
@@ -24,7 +26,10 @@ def main():
 
     output = mc.ac
     output.to_csv(args.output_csv)
-    print("Simulation completed. Output saved to:", args.output_csv)
+    print("completed")
 
 if __name__ == "__main__":
     main()
+
+
+
