@@ -1,6 +1,10 @@
 # test_cli.py
-import subprocess
+import sys
 import os
+import subprocess
+
+# Add project root to PYTHONPATH
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def test_cli_runs():
     # Create a sample irradiance CSV file
@@ -25,4 +29,5 @@ def test_cli_runs():
 
     os.remove("out.csv")
     os.remove(sample_csv)
+
 

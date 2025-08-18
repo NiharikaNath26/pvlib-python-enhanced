@@ -10,9 +10,9 @@ class PVSystem:
         self.surface_tilt = surface_tilt
         self.surface_azimuth = surface_azimuth
 
-from my_pvlib.module import calculate_module_efficiency
-from my_pvlib.inverter import calculate_inverter_output
-from my_pvlib.temperature import estimate_module_temperature
+from src.module import calculate_module_efficiency
+from src.inverter import calculate_inverter_output
+from src.temperature import estimate_module_temperature
 
 __all__ = [
     "Location",
@@ -21,6 +21,7 @@ __all__ = [
     "calculate_inverter_output",
     "estimate_module_temperature"
 ]
+
 
 
 

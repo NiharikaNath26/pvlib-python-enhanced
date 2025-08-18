@@ -3,8 +3,8 @@
 
 import argparse
 import pandas as pd
-from my_pvlib.pvsystem import PVSystem, Location
-from my_pvlib.modelchain import ModelChain
+from src.pvsystem import PVSystem, Location
+from src.modelchain import ModelChain
 
 
 def main():
